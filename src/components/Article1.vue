@@ -1,8 +1,8 @@
 <template>
 <div class="container">
   <div class="card">
-  <h3> {{ joke }} </h3>
-  <button @click="r2"> Generate </button>
+  <h3> {{ Joke }} </h3>
+  <button @click="generate"> Generate </button>
 </div>
 </div>
 </template>
@@ -22,6 +22,10 @@ export default {
       Hit: hit
 
     }
+  },
+
+  methods: {
+    generate: r2,
   }
 }
 </script>
