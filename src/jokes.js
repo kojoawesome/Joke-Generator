@@ -1,25 +1,22 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const options = {
   method: 'GET',
   url: 'https://dad-jokes.p.rapidapi.com/random/joke',
   headers: {
-    'X-RapidAPI-Key': 'dbc7ad0761msh07ab629def75aa5p1f6a27jsn1073da560166',
+    'X-RapidAPI-Key': 'df935fe5f1msh01dd30557eec1bfp1ce381jsn81b0aa3119cc',
     'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
   }
 };
 
-export async function r2(){
-    try {
-        const response = await axios.request(options);
-        let joke = response.data.body[0].setup
-        let hit = response.data.body[0].punchline
-        console.log(joke,hit);
-        // console.log(response.data.body[0].setup);
-    } catch (error) {
-        console.error(error);
-    }
+export async function r2() {
+  try {
+    const response = await axios.request(options);
+    const joke = response.data.body[0].setup;
+    const hit = response.data.body[0].punchline;
+    return { joke, hit };
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 }
-
-r2()
-
