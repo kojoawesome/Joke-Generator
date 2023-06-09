@@ -4,7 +4,7 @@ const options = {
   method: 'GET',
   url: 'https://dad-jokes.p.rapidapi.com/random/joke',
   headers: {
-    'X-RapidAPI-Key': 'df935fe5f1msh01dd30557eec1bfp1ce381jsn81b0aa3119cc',
+    // 'X-RapidAPI-Key': 'df935fe5f1msh01dd30557eec1bfp1ce381jsn81b0aa3119cc',
     'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
   }
 };

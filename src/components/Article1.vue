@@ -1,8 +1,13 @@
 <template>
   <div class="container">
     <div class="card">
-      <h3>{{ Joke }}</h3>
-      <button @click="generate">Generate</button>
+      <div class="propet">
+        <h4>The Joke</h4>
+        <h3 style="color: white;">{{ Joke }}</h3>
+        <h4>The Punchline</h4>
+        <h3 style="color: white;" >{{ Hit }}</h3>
+        <button @click="generate">Generate</button>
+      </div>
     </div>
   </div>
 </template>
@@ -49,4 +54,14 @@ export default {
   border-radius: 20px;
   text-align: center;
 }
+
+.propet {
+  padding: 20px;
+}
+
+.propet button{
+  border-radius: 30px;
+  padding: 5px;
+}
+
 </style>
