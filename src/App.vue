@@ -1,6 +1,7 @@
 <template>
   <h3>Dad Joke Generator</h3>
   <Article/>
+  <p> by Kojo for ALX</p>
 </template>
 
 <script>
